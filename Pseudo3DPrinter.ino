@@ -7,11 +7,7 @@ Servo servo1;
 void setup() {
   servo1.attach(servoPin);
 
-  servo1.write(180);
-  delay(3000);
-
-  servo1.write(90);
-  delay(1000);
+  servo1.write(180); // run at full speed
 }
 
 void loop() {
