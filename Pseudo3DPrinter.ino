@@ -22,13 +22,13 @@ void setup() {
 }
 
 void loop() {
-  reading = digitalRead(switchInPin); // check current state of button
+  reading = digitalRead(switchPinIn); // check current state of button
 
   // if the button is not pressed, make motors run at full speed
   if (reading == LOW && prevState == HIGH){
     servo1.write(180);
     servo2.write(180);
-    servo3.write(180)
+    servo3.write(180);
   }
 
   // if the button is pressed, stop the motors
